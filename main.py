@@ -19,7 +19,7 @@ def fill_missing_values(data):
     try:
         columns_to_fill = ['date_added', 'job_type', 'organization', 'salary', 'sector']
         for column in columns_to_fill:
-            data[column].fillna('unknown', inplace=True)
+            data.fillna({column: 'unknown'}, inplace=True)
         return data
     except Exception as e:
         logging.error("Error filling missing values", exc_info=e)
