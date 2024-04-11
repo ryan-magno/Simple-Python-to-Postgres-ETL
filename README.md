@@ -1,1 +1,1 @@
-# simple etl pipeline
+# Simple-Python-to-Postgres-ETL
